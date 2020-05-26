@@ -1,6 +1,8 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
+//development
+using System;
 
 namespace MonoGameProject
 {
@@ -36,6 +38,8 @@ namespace MonoGameProject
                 Exit();
 
             // TODO: Add your update logic here
+            //Development
+            Console.WriteLine(1000/gameTime.ElapsedGameTime.TotalMilliseconds); //Monogame está bloqueado a 60 FPS
 
             base.Update(gameTime);
         }
